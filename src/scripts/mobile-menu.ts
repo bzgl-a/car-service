@@ -27,7 +27,10 @@ export function initMobileMenu(): void {
 
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
-        const headerOffset = 50;
+        let headerOffset;
+        targetElement.id === "sign-up"
+          ? (headerOffset = 120)
+          : (headerOffset = 80);
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition =
           elementPosition + window.pageYOffset - headerOffset;

@@ -113,7 +113,11 @@
             <div
               class="d-flex align-items-center justify-content-between gap-3"
             >
-              <button class="btn orange-btn">Записаться на диагностику</button>
+              <a
+                href="#sign-up"
+                class="btn orange-btn text-decoration-none mob-nav"
+                >Записаться на диагностику</a
+              >
             </div>
             <div class="main__extra d-flex align-items-center gap-4">
               <div class="d-flex align-items-center gap-1">
@@ -368,9 +372,12 @@
             </div>
           </div>
 
-          <button type="button" class="btn orange-btn fw-bold">
+          <a
+            href="#sign-up"
+            class="btn orange-btn text-decoration-none mob-nav"
+          >
             Связаться со мной
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -555,9 +562,12 @@
             Позвоните или оставьте заявку — проконсультирую и запишу на удобное
             время.
           </p>
-          <button type="button" class="btn reviews-btn">
+          <a
+            href="#sign-up"
+            class="btn reviews-btn text-decoration-none mob-nav"
+          >
             Записаться на диагностику
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -645,13 +655,19 @@
                 Могу приехать к вам для диагностики или несложного ремонта.
                 Звоните в любое время — решим вашу проблему!
               </p>
-              <button type="button" class="btn orange-btn">
-                Вызвать мастера
-              </button>
+              <a
+                href="tel:+79999999999"
+                class="btn orange-btn text-decoration-none"
+              >
+                Вызвать мастера</a
+              >
             </div>
           </div>
 
-          <form class="p-3 d-flex flex-column gap-3 border rounded-3">
+          <form
+            id="sign-up"
+            class="p-3 d-flex flex-column gap-3 border rounded-3"
+          >
             <h3 class="m-0">Оставить заявку</h3>
             <div class="d-flex flex-column gap-2">
               <label for="name" class="fw-bold text-dark-gray">ФИО</label>
@@ -742,25 +758,53 @@
           </div>
           <div class="d-flex flex-column gap-3 text-gray">
             <span class="mb-1 text-white fw-bold fs-5">Навигация</span>
-            <span>Услуги</span>
-            <span>О мастере</span>
-            <span>Отзывы</span>
-            <span>Контакты</span>
+            <a href="#services" class="mob-nav text-gray text-decoration-none"
+              >Услуги</a
+            >
+            <a href="#about-us" class="mob-nav text-gray text-decoration-none"
+              >О Нас</a
+            >
+            <a href="#reviews" class="mob-nav text-gray text-decoration-none"
+              >Отзывы</a
+            >
+            <a href="#contact-us" class="mob-nav text-gray text-decoration-none"
+              >Контакты</a
+            >
           </div>
 
           <div class="d-flex flex-column gap-3 text-gray">
             <span class="mb-1 text-white fw-bold fs-5">Услуги</span>
-            <span>Диагностика</span>
-            <span>Сигнализации</span>
-            <span>Автозвук</span>
-            <span>Ремонт проводки</span>
+            <a href="#services" class="mob-nav text-gray text-decoration-none"
+              >Диагностика</a
+            >
+            <a href="#services" class="mob-nav text-gray text-decoration-none"
+              >Сигнализации</a
+            >
+            <a href="#services" class="mob-nav text-gray text-decoration-none"
+              >Автозвук</a
+            >
+            <a href="#services" class="mob-nav text-gray text-decoration-none"
+              >Ремонт проводки</a
+            >
           </div>
 
           <div class="d-flex flex-column gap-3 text-gray">
             <span class="mb-1 text-white fw-bold fs-5">Контакты</span>
-            <span>г. Тула</span>
-            <span>+7 (999) 123-45-67</span>
-            <span>autoelectric@example.com</span>
+            <a
+              href="https://yandex.ru/maps/?pt=54.159964, 37.576304&z=16&l=map"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray text-decoration-none"
+              >г. Тула, Калужское шоссе
+            </a>
+            <a href="tel:+79999999999" class="text-gray text-decoration-none"
+              >+7 (999) 999-99-99</a
+            >
+            <a
+              href="mailto:autoelectric@example.com"
+              class="text-gray text-decoration-none"
+              >autoelectric@example.com</a
+            >
           </div>
         </div>
         <hr />
