@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>car-service</title>
+    <script type="module" crossorigin src="/assets/index-C6zPXEgA.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BKfIF96a.css">
+  </head>
+  <body>
+    <!-- ШАПКА -->
+    <header class="header d-flex align-items-center bg-dark">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between gap-2">
+          <a
+            class="d-flex align-items-center gap-2 text-decoration-none"
+            href="#"
+          >
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2015%2015'%20fill='%23ff6800'%3e%3cpath%20d='M12.6,8.7,11.5,6.5a1.05,1.05,0,0,0-.9-.5H4.4a1.05,1.05,0,0,0-.9.5L2.4,8.7,1.16,9.852a.5.5,0,0,0-.16.367V14.5a.5.5,0,0,0,.5.5h2c.2,0,.5-.2.5-.4V14h7v.5c0,.2.2.5.4.5h2.1a.5.5,0,0,0,.5-.5V10.219a.5.5,0,0,0-.16-.367ZM4.5,7h6l1,2h-8ZM5,11.6c0,.2-.3.4-.5.4H2.4c-.2,0-.4-.3-.4-.5V10.4c.1-.3.3-.5.6-.4l2,.4c.2,0,.4.3.4.5Zm8-.1c0,.2-.2.5-.4.5H10.5c-.2,0-.5-.2-.5-.4v-.7c0-.2.2-.5.4-.5l2-.4c.3-.1.5.1.6.4ZM14,2V3a1.009,1.009,0,0,1-1.017,1H5.348A2.549,2.549,0,0,1,1,3.5H3.5v-2H1A2.549,2.549,0,0,1,5.348,1h7.635A1.009,1.009,0,0,1,14,2Z'/%3e%3c/svg%3e"
+              width="40"
+              height="40"
+              alt="Логотип"
+            />
+            <div class="d-flex flex-column gap-1">
+              <span class="text-white fw-bold fs-5">DOCCAR71</span>
+              <span class="text-gray" style="font-size: 12px"
+                >Автоэлектрик</span
+              >
+            </div>
+          </a>
+          <nav class="navbar">
+            <ul class="d-flex align-items-center gap-3">
+              <li class="navbar__item">
+                <a href="#services" class="mob-nav">Услуги</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#about-us" class="mob-nav"> О нас</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#reviews" class="mob-nav">Отзывы</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#contact-us" class="mob-nav">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="burger__wrapper">
+            <button class="burger__button" id="burger">
+              <div class="burger-line line1"></div>
+              <div class="burger-line line2"></div>
+              <div class="burger-line line3"></div>
+            </button>
+          </div>
+
+          <a
+            href="tel:+78005553535"
+            class="text-decoration-none btn orange-btn header-btn"
+          >
+            Позвонить нам
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- БУРГЕР МЕНЮ -->
+    <div class="mobile-overlay__body">
+      <ul
+        class="d-flex flex-column align-items-center justify-content-center gap-5"
+      >
+        <li class="mobile-overlay__item">
+          <a href="#services" class="mobile-overlay__link mob-nav">Услуги</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#about-us" class="mobile-overlay__link mob-nav">О нас</a>
+        </li>
+
+        <li class="mobile-overlay__item">
+          <a href="#reviews" class="mobile-overlay__link mob-nav">Отзывы</a>
+        </li>
+
+        <li class="mobile-overlay__item">
+          <a href="#contact-us" class="mobile-overlay__link mob-nav"
+            >Контакты</a
+          >
+        </li>
+
+        <li class="mobile-overlay__item">
+          <a
+            href="tel:+78005553535"
+            class="text-decoration-none btn btn-sm orange-btn"
+          >
+            Позвонить нам
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ГЛАВНАЯ -->
+    <main class="main d-flex align-items-center justify-content-center">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between gap-3">
+          <div class="main__info d-flex flex-column gap-5">
+            <h1 class="header__title fw-bold">
+              <span class="text-white">Профессиональный</span>
+              <span class="text-orange">автоэлектрик</span>
+            </h1>
+            <p class="m-0 text-gray section__description">
+              Диагностика и ремонт электрооборудования автомобилей любой
+              сложности. Современное оборудование, качественные запчасти,
+              индивидуальный подход.
+            </p>
+            <div
+              class="d-flex align-items-center justify-content-between gap-3"
+            >
+              <button class="btn orange-btn">Записаться на диагностику</button>
+            </div>
+            <div class="main__extra d-flex align-items-center gap-4">
+              <div class="d-flex align-items-center gap-1">
+                <img src="data:image/svg+xml,%3csvg%20width='20px'%20height='20px'%20viewBox='0%200%2020.00%2020.00'%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20stroke='%23ff6800'%20stroke-width='0.0002'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%20%3e%3cpath%20fill='%23ff6800'%20fill-rule='evenodd'%20d='M3%2010a7%207%200%20019.307-6.611%201%201%200%2000.658-1.889%209%209%200%20105.98%207.501%201%201%200%2000-1.988.22A7%207%200%20113%2010zm14.75-5.338a1%201%200%2000-1.5-1.324l-6.435%207.28-3.183-2.593a1%201%200%2000-1.264%201.55l3.929%203.2a1%201%200%20001.38-.113l7.072-8z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e" alt="" class="text-orange" />
+                <span class="text-gray">Выезд на место</span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="data:image/svg+xml,%3csvg%20width='20px'%20height='20px'%20viewBox='0%200%2020.00%2020.00'%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20stroke='%23ff6800'%20stroke-width='0.0002'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%20%3e%3cpath%20fill='%23ff6800'%20fill-rule='evenodd'%20d='M3%2010a7%207%200%20019.307-6.611%201%201%200%2000.658-1.889%209%209%200%20105.98%207.501%201%201%200%2000-1.988.22A7%207%200%20113%2010zm14.75-5.338a1%201%200%2000-1.5-1.324l-6.435%207.28-3.183-2.593a1%201%200%2000-1.264%201.55l3.929%203.2a1%201%200%20001.38-.113l7.072-8z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e" alt="" class="text-orange" />
+                <span class="text-gray">Опыт 10+ лет</span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="data:image/svg+xml,%3csvg%20width='20px'%20height='20px'%20viewBox='0%200%2020.00%2020.00'%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20stroke='%23ff6800'%20stroke-width='0.0002'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%20%3e%3cpath%20fill='%23ff6800'%20fill-rule='evenodd'%20d='M3%2010a7%207%200%20019.307-6.611%201%201%200%2000.658-1.889%209%209%200%20105.98%207.501%201%201%200%2000-1.988.22A7%207%200%20113%2010zm14.75-5.338a1%201%200%2000-1.5-1.324l-6.435%207.28-3.183-2.593a1%201%200%2000-1.264%201.55l3.929%203.2a1%201%200%20001.38-.113l7.072-8z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e" alt="" class="text-orange" />
+                <span class="text-gray">Гарантия на работу</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__grid">
+            <div class="main_card d-flex flex-column gap-1">
+              <span class="text-orange fs-2 fw-bold">1500+</span
+              ><span class="text-gray text-nowrap">Авто обслужено</span>
+            </div>
+            <div class="main_card d-flex flex-column gap-1">
+              <span class="text-orange fs-2 fw-bold">10+</span
+              ><span class="text-gray text-nowrap">Лет опыта</span>
+            </div>
+            <div class="main_card d-flex flex-column gap-1">
+              <span class="text-orange fs-2 fw-bold">24/7</span
+              ><span class="text-gray text-nowrap">На связи</span>
+            </div>
+            <div class="main_card d-flex flex-column gap-1">
+              <span class="text-orange fs-2 fw-bold">100%</span
+              ><span class="text-gray text-nowrap">Качество</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- УСЛУГИ -->
+    <section id="services" class="services__section">
+      <div class="container">
+        <div
+          class="mb-5 d-flex flex-column align-items-center"
+          style="gap: 15px"
+        >
+          <span class="section__preview">Услуги</span>
+          <h2 class="section__title text-center">
+            Полный спектр услуг автоэлектрика
+          </h2>
+          <p class="section__description text-center text-dark-gray">
+            От простой диагностики до сложного ремонта электрооборудования — всё
+            выполняется качественно и в срок.
+          </p>
+        </div>
+
+        <ul class="services__list">
+          <li class="services__card d-flex flex-column gap-2">
+            <img
+              class="services__img"
+              src="/assets/gear-D_jzaHWv.svg"
+              alt=""
+              width="50px"
+              height="50px"
+            /><span class="fw-bold fs-5">Компьютерная диагностика</span>
+            <p class="description text-dark-gray">
+              Полная диагностика электронных систем автомобиля с использованием
+              профессионального оборудования.
+            </p>
+          </li>
+          <li class="services__card d-flex flex-column gap-2">
+            <img
+              class="services__img"
+              src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20stroke='%23ffffff'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M2.5%208C2.5%207.17157%203.17157%206.5%204%206.5H18C18.8284%206.5%2019.5%207.17157%2019.5%208V9C19.5%209.27614%2019.7239%209.5%2020%209.5C20.8284%209.5%2021.5%2010.1716%2021.5%2011V13C21.5%2013.8284%2020.8284%2014.5%2020%2014.5C19.7239%2014.5%2019.5%2014.7239%2019.5%2015V16C19.5%2016.8284%2018.8284%2017.5%2018%2017.5H4C3.17157%2017.5%202.5%2016.8284%202.5%2016V14C2.5%2013.7239%202.72386%2013.5%203%2013.5C3.27614%2013.5%203.5%2013.7239%203.5%2014V16C3.5%2016.2761%203.72386%2016.5%204%2016.5H18C18.2761%2016.5%2018.5%2016.2761%2018.5%2016V15C18.5%2014.1716%2019.1716%2013.5%2020%2013.5C20.2761%2013.5%2020.5%2013.2761%2020.5%2013V11C20.5%2010.7239%2020.2761%2010.5%2020%2010.5C19.1716%2010.5%2018.5%209.82843%2018.5%209V8C18.5%207.72386%2018.2761%207.5%2018%207.5H4C3.72386%207.5%203.5%207.72386%203.5%208V10C3.5%2010.2761%203.27614%2010.5%203%2010.5C2.72386%2010.5%202.5%2010.2761%202.5%2010V8Z'%20fill='%23ffffff'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+              alt=""
+              width="50px"
+              height="50px"
+            /><span class="fw-bold fs-5">Ремонт электрики</span>
+            <p class="description text-dark-gray">
+              Устранение неисправностей электрооборудования: генератор, стартер,
+              аккумулятор, проводка.
+            </p>
+          </li>
+          <li class="services__card d-flex flex-column gap-2">
+            <img
+              class="services__img"
+              src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20stroke='%23ffffff'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M11.3586%2020.6831C11.5639%2020.7901%2011.6666%2020.8436%2011.809%2020.8713C11.92%2020.8929%2012.08%2020.8929%2012.191%2020.8713C12.3334%2020.8436%2012.4361%2020.7901%2012.6414%2020.6831C14.54%2019.6939%2020%2016.4612%2020%2012.0001V8.21772C20%207.4182%2020%207.01845%2019.8692%206.67482C19.7537%206.37126%2019.566%206.10039%2019.3223%205.88564C19.0465%205.64255%2018.6722%205.50219%2017.9236%205.22146L12.5618%203.21079C12.3539%203.13283%2012.25%203.09385%2012.143%203.07839C12.0482%203.06469%2011.9518%203.06469%2011.857%203.07839C11.75%203.09385%2011.6461%203.13283%2011.4382%203.21079L6.0764%205.22146C5.3278%205.50219%204.9535%205.64255%204.67766%205.88564C4.43398%206.10039%204.24627%206.37126%204.13076%206.67482C4%207.01845%204%207.4182%204%208.21772V12.0001C4%2016.4612%209.45996%2019.6939%2011.3586%2020.6831Z'%20stroke='%23ffffff'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+              alt=""
+              width="50px"
+              height="50px"
+            /><span class="fw-bold fs-5">Установка сигнализаций</span>
+            <p class="description text-dark-gray">
+              Профессиональная установка и настройка современных охранных систем
+              с автозапуском.
+            </p>
+          </li>
+          <li class="services__card d-flex flex-column gap-2">
+            <img
+              class="services__img"
+              src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20stroke='%23ffffff'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M3.15838%2013.9306C2.44537%2012.7423%202.44537%2011.2577%203.15838%2010.0694V10.0694C3.37596%209.70674%203.73641%209.45272%204.1511%209.36978L5.84413%209.03117C5.94499%209.011%206.03591%208.95691%206.10176%208.87788L8.17085%206.39498C9.3534%204.97592%209.94468%204.26638%2010.4723%204.45742C11%204.64846%2011%205.57207%2011%207.41928L11%2016.5807C11%2018.4279%2011%2019.3515%2010.4723%2019.5426C9.94468%2019.7336%209.3534%2019.0241%208.17085%2017.605L6.10176%2015.1221C6.03591%2015.0431%205.94499%2014.989%205.84413%2014.9688L4.1511%2014.6302C3.73641%2014.5473%203.37596%2014.2933%203.15838%2013.9306V13.9306Z'%20stroke='%23ffffff'%3e%3c/path%3e%3cpath%20d='M15.5355%208.46447C16.4684%209.39732%2016.9948%2010.6611%2017%2011.9803C17.0052%2013.2996%2016.4888%2014.5674%2015.5633%2015.5076'%20stroke='%23ffffff'%20stroke-linecap='round'%3e%3c/path%3e%3cpath%20d='M19.6569%206.34314C21.1494%207.83572%2021.9916%209.85769%2021.9999%2011.9685C22.0083%2014.0793%2021.182%2016.1078%2019.7012%2017.6121'%20stroke='%23ffffff'%20stroke-linecap='round'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+              alt=""
+              width="50px"
+              height="50px"
+            /><span class="fw-bold fs-5">Автозвук и мультимедиа</span>
+            <p class="description text-dark-gray">
+              Установка и подключение магнитол, динамиков, усилителей, камер
+              заднего вида.
+            </p>
+          </li>
+          <li class="services__card d-flex flex-column gap-2">
+            <img
+              class="services__img"
+              src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_5874_10713)'%3e%3cpath%20d='M7.14634%2011.5435L7.00659%2011.5308C5.22414%2011.3689%204.33291%2011.2878%204.04981%2010.6781C3.76672%2010.0684%204.27991%209.33523%205.30631%207.86897L9.48617%201.89778C10.1642%200.929132%2010.5033%200.444802%2010.7956%200.547796C11.088%200.650777%2011.0487%201.24067%2010.9701%202.42044L10.733%205.97703C10.6614%207.0506%2010.6257%207.58738%2010.9341%207.94865C11.2426%208.30985%2011.7783%208.35862%2012.8499%208.45603L12.9897%208.46875C14.7721%208.63068%2015.6633%208.71177%2015.9464%209.32147C16.2295%209.93117%2015.7163%2010.6643%2014.6899%2012.1306L10.51%2018.1018C9.83197%2019.0704%209.49294%2019.5548%209.20057%2019.4518C8.90821%2019.3487%208.94752%2018.7589%209.02616%2017.5791L9.26322%2014.0226C9.33486%2012.949%209.37055%2012.4122%209.06209%2012.0509C8.75362%2011.6897%208.21789%2011.6409%207.14634%2011.5435Z'%20stroke='white'%20stroke-width='1.16667'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_5874_10713'%3e%3crect%20width='20'%20height='20'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+              alt=""
+              width="50px"
+              height="50px"
+            /><span class="fw-bold fs-5">Освещение</span>
+            <p class="description text-dark-gray">
+              Ремонт и модернизация световых приборов, установка ксенона,
+              LED-оптики.
+            </p>
+          </li>
+          <li class="services__card d-flex flex-column gap-2">
+            <img
+              class="services__img"
+              src="data:image/svg+xml,%3csvg%20fill='%23ffffff'%20height='64px'%20width='64px'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20511.999%20511.999'%20xml:space='preserve'%20stroke='%23ffffff'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cg%3e%3cg%3e%3cpath%20d='M421.277,99.534H285.24V63.918c0-7.656-6.208-13.863-13.863-13.863H142.885c-7.655,0-13.863,6.206-13.863,13.863v1.421%20H51.669c-3.437,0-6.75,1.277-9.299,3.581L4.564,103.115C1.658,105.743,0,109.479,0,113.396c0,3.918,1.658,7.654,4.564,10.282%20l37.805,34.194c2.549,2.305,5.862,3.581,9.299,3.581h77.354v1.421c0,7.656,6.208,13.863,13.863,13.863h128.493%20c7.655,0,13.863-6.206,13.863-13.863v-35.615h136.037c34.738,0,62.997,28.26,62.997,62.997s-28.26,62.996-62.997,62.996H380.78%20c-7.655,0-13.863,6.206-13.863,13.863c0,7.656,6.208,13.863,13.863,13.863h40.496c50.025,0,90.723-40.698,90.723-90.723%20C512,140.232,471.301,99.534,421.277,99.534z%20M129.021,133.727H57.007l-22.48-20.331l22.48-20.332h72.014V133.727z%20M257.515,149.011H156.748v-1.421V79.201v-1.421h100.768V149.011z'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3cg%3e%3cg%3e%3cpath%20d='M348.353,264.399c-0.18-0.873-0.444-1.747-0.79-2.592c-0.347-0.832-0.776-1.636-1.275-2.384%20c-0.513-0.762-1.095-1.469-1.733-2.107s-1.345-1.22-2.109-1.733c-0.749-0.499-1.551-0.929-2.384-1.275%20c-0.844-0.347-1.719-0.61-2.592-0.79c-1.788-0.36-3.632-0.36-5.42,0c-0.887,0.18-1.761,0.444-2.591,0.79%20c-0.846,0.347-1.65,0.776-2.398,1.275c-0.762,0.513-1.469,1.095-2.107,1.733s-1.221,1.345-1.719,2.107%20c-0.499,0.749-0.929,1.553-1.275,2.384c-0.347,0.846-0.61,1.719-0.79,2.592c-0.18,0.901-0.277,1.816-0.277,2.717%20c0,0.901,0.097,1.816,0.277,2.703s0.444,1.761,0.79,2.592c0.347,0.846,0.776,1.65,1.275,2.398%20c0.498,0.762,1.081,1.469,1.719,2.107s1.345,1.22,2.107,1.719c0.749,0.499,1.553,0.929,2.398,1.275%20c0.832,0.347,1.704,0.61,2.591,0.79c0.889,0.18,1.804,0.277,2.703,0.277c0.901,0,1.817-0.097,2.717-0.277%20c0.873-0.18,1.748-0.444,2.592-0.79c0.833-0.347,1.636-0.776,2.384-1.275c0.764-0.499,1.471-1.081,2.109-1.719%20c0.638-0.638,1.22-1.345,1.733-2.107c0.499-0.749,0.929-1.553,1.275-2.398c0.347-0.832,0.61-1.705,0.79-2.592%20c0.18-0.887,0.262-1.802,0.262-2.703S348.532,265.3,348.353,264.399z'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3cg%3e%3cg%3e%3cpath%20d='M438.015,388.32l-37.805-34.194c-2.549-2.305-5.863-3.581-9.299-3.581h-77.352v-1.421c0-7.656-6.208-13.863-13.863-13.863%20H171.202c-7.655,0-13.863,6.206-13.863,13.863v35.615h-21.606c-28.607,0-51.881-23.274-51.881-51.88%20c0-28.607,23.274-51.881,51.881-51.881h156.12c7.655,0,13.863-6.206,13.863-13.863s-6.208-13.863-13.863-13.863h-156.12%20c-43.895,0-79.606,35.712-79.606,79.606s35.712,79.605,79.606,79.605h21.606v35.616c0,7.656,6.208,13.863,13.863,13.863h128.494%20c7.655,0,13.863-6.206,13.863-13.863v-1.421h77.352c3.437,0,6.75-1.277,9.299-3.581l37.805-34.195%20c2.906-2.628,4.564-6.363,4.564-10.282C442.579,394.683,440.921,390.949,438.015,388.32z%20M285.834,364.407v68.389v1.421H185.065%20v-71.23h100.769V364.407z%20M385.573,418.933h-72.014V378.27h72.012l22.48,20.331L385.573,418.933z'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e"
+              alt=""
+              width="50px"
+              height="50px"
+            /><span class="fw-bold fs-5">Ремонт проводки</span>
+            <p class="description text-dark-gray">
+              Поиск и устранение обрывов, коротких замыканий, восстановление
+              проводки после ДТП.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- О НАС -->
+    <section id="about-us" class="about-us__section">
+      <div class="container">
+        <div
+          class="mb-5 d-flex flex-column align-items-center"
+          style="gap: 15px"
+        >
+          <span class="section__preview">О нас</span>
+          <h2 class="section__title text-center">Опыт и профессионализм</h2>
+          <p class="section__description text-center text-dark-gray">
+            Работаю автоэлектриком более 10 лет. Использую современное
+            оборудование, качественные запчасти и индивидуальный подход к
+            каждому клиенту.
+          </p>
+        </div>
+
+        <ul class="about-us__list">
+          <li class="about-us__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="about-us__img"
+              src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20stroke='%23ffffff'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3ccircle%20cx='12'%20cy='9'%20r='7'%20stroke='%23ffffff'%20stroke-width='1.5'%3e%3c/circle%3e%3cpath%20d='M7.35111%2015L6.71424%2017.323C6.0859%2019.6148%205.77173%2020.7607%206.19097%2021.3881C6.3379%2021.6079%206.535%2021.7844%206.76372%2021.9008C7.41635%2022.2331%208.42401%2021.7081%2010.4393%2020.658C11.1099%2020.3086%2011.4452%2020.1339%2011.8014%2020.0959C11.9335%2020.0818%2012.0665%2020.0818%2012.1986%2020.0959C12.5548%2020.1339%2012.8901%2020.3086%2013.5607%2020.658C15.576%2021.7081%2016.5837%2022.2331%2017.2363%2021.9008C17.465%2021.7844%2017.6621%2021.6079%2017.809%2021.3881C18.2283%2020.7607%2017.9141%2019.6148%2017.2858%2017.323L16.6489%2015'%20stroke='%23ffffff'%20stroke-width='1.5'%20stroke-linecap='round'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+              width="50px"
+              height="50px"
+              alt=""
+            />
+            <span class="fw-bold fs-3">10+</span>
+            <span class="text-nowrap">Лет опыта</span>
+            <span class="text-nowrap text-dark-gray fs-14"
+              >В автоэлектрике</span
+            >
+          </li>
+          <li class="about-us__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="about-us__img"
+              src="data:image/svg+xml,%3csvg%20fill='%23ffffff'%20width='28px'%20height='28px'%20viewBox='0%200%2024%2024'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20fill-rule='evenodd'%20d='M3.5%208a5.5%205.5%200%20118.596%204.547%209.005%209.005%200%20015.9%208.18.75.75%200%2001-1.5.045%207.5%207.5%200%2000-14.993%200%20.75.75%200%2001-1.499-.044%209.005%209.005%200%20015.9-8.181A5.494%205.494%200%20013.5%208zM9%204a4%204%200%20100%208%204%204%200%20000-8z'%3e%3c/path%3e%3cpath%20d='M17.29%208c-.148%200-.292.01-.434.03a.75.75%200%2011-.212-1.484%204.53%204.53%200%20013.38%208.097%206.69%206.69%200%20013.956%206.107.75.75%200%2001-1.5%200%205.193%205.193%200%2000-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03%203.03%200%200017.29%208z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+              width="50px"
+              height="50px"
+              alt=""
+            />
+            <span class="fw-bold fs-3">1500+</span>
+            <span>Автомобилей</span>
+            <span class="text-nowrap text-dark-gray fs-14"
+              >Успешно обслужено</span
+            >
+          </li>
+          <li class="about-us__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="about-us__img"
+              src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024.00%2024.00'%20fill='%23ffffff'%20xmlns='http://www.w3.org/2000/svg'%20stroke='%23ffffff'%20stroke-width='0.00024000000000000003'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M23%2012C23%2018.0751%2018.0751%2023%2012%2023C5.92487%2023%201%2018.0751%201%2012C1%205.92487%205.92487%201%2012%201C18.0751%201%2023%205.92487%2023%2012ZM3.00683%2012C3.00683%2016.9668%207.03321%2020.9932%2012%2020.9932C16.9668%2020.9932%2020.9932%2016.9668%2020.9932%2012C20.9932%207.03321%2016.9668%203.00683%2012%203.00683C7.03321%203.00683%203.00683%207.03321%203.00683%2012Z'%20fill='%23ffffff'%3e%3c/path%3e%3cpath%20d='M12%205C11.4477%205%2011%205.44771%2011%206V12.4667C11%2012.4667%2011%2012.7274%2011.1267%2012.9235C11.2115%2013.0898%2011.3437%2013.2343%2011.5174%2013.3346L16.1372%2016.0019C16.6155%2016.278%2017.2271%2016.1141%2017.5032%2015.6358C17.7793%2015.1575%2017.6155%2014.5459%2017.1372%2014.2698L13%2011.8812V6C13%205.44772%2012.5523%205%2012%205Z'%20fill='%23ffffff'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+              width="50px"
+              height="50px"
+              alt=""
+            />
+            <span class="fw-bold fs-3">24/7</span>
+            <span class="text-nowrap">На связи</span>
+            <span class="text-nowrap text-dark-gray fs-14">Выезд на место</span>
+          </li>
+          <li class="about-us__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="about-us__img"
+              src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20stroke='%23ffffff'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M11.3586%2020.6831C11.5639%2020.7901%2011.6666%2020.8436%2011.809%2020.8713C11.92%2020.8929%2012.08%2020.8929%2012.191%2020.8713C12.3334%2020.8436%2012.4361%2020.7901%2012.6414%2020.6831C14.54%2019.6939%2020%2016.4612%2020%2012.0001V8.21772C20%207.4182%2020%207.01845%2019.8692%206.67482C19.7537%206.37126%2019.566%206.10039%2019.3223%205.88564C19.0465%205.64255%2018.6722%205.50219%2017.9236%205.22146L12.5618%203.21079C12.3539%203.13283%2012.25%203.09385%2012.143%203.07839C12.0482%203.06469%2011.9518%203.06469%2011.857%203.07839C11.75%203.09385%2011.6461%203.13283%2011.4382%203.21079L6.0764%205.22146C5.3278%205.50219%204.9535%205.64255%204.67766%205.88564C4.43398%206.10039%204.24627%206.37126%204.13076%206.67482C4%207.01845%204%207.4182%204%208.21772V12.0001C4%2016.4612%209.45996%2019.6939%2011.3586%2020.6831Z'%20stroke='%23ffffff'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+              width="50px"
+              height="50px"
+              alt=""
+            />
+            <span class="fw-bold fs-3">100%</span>
+            <span>Гарантия</span>
+            <span class="text-nowrap text-dark-gray fs-14"
+              >На все виды работ</span
+            >
+          </li>
+        </ul>
+
+        <div class="about-us__extra p-5 mt-5 bg-dark rounded-3">
+          <div class="d-flex flex-column gap-3">
+            <span class="mb-1 text-white fs-4 fw-bold"
+              >Почему выбирают меня?</span
+            >
+
+            <div class="d-flex align-items-center gap-2">
+              <img
+                class="about-us__check-img"
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20stroke='%23ffffff'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M4%2012.6111L8.92308%2017.5L20%206.5'%20stroke='%23ffffff'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                width="22px"
+                height="22px"
+                alt=""
+              />
+              <span class="text-gray"
+                >Современное диагностическое оборудование</span
+              >
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <img
+                class="about-us__check-img"
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20stroke='%23ffffff'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M4%2012.6111L8.92308%2017.5L20%206.5'%20stroke='%23ffffff'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                width="22px"
+                height="22px"
+                alt=""
+              />
+              <span class="text-gray"> Честность и прозрачность в работе</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <img
+                class="about-us__check-img"
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20stroke='%23ffffff'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M4%2012.6111L8.92308%2017.5L20%206.5'%20stroke='%23ffffff'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                width="22px"
+                height="22px"
+                alt=""
+              />
+              <span class="text-gray">Работа с любыми марками и моделями</span>
+            </div>
+          </div>
+
+          <button type="button" class="btn orange-btn fw-bold">
+            Связаться со мной
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section id="reviews" class="reviews__section">
+      <div class="container">
+        <div
+          class="mb-5 d-flex flex-column align-items-center"
+          style="gap: 15px"
+        >
+          <span class="section__preview">Отзывы</span>
+          <h2 class="section__title text-center">Что говорят клиенты</h2>
+          <p class="section__description text-center text-dark-gray">
+            Реальные отзывы людей, которые доверили мне свои автомобили.
+          </p>
+        </div>
+
+        <ul class="reviews__list gap-5">
+          <li class="reviews__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="reviews__img"
+              src="data:image/svg+xml,%3csvg%20fill='%23ff6800'%20width='64px'%20height='64px'%20viewBox='0%200%2032%2032'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M6.67,26.06c.09,0,8.77-.14,8.77-11.89A7.22,7.22,0,1,0,5.67,20.9v4.16A1,1,0,0,0,6.67,26.06ZM3,14.17a5.22,5.22,0,1,1,10.44,0c0,7.5-3.88,9.31-5.77,9.75V20.17a1,1,0,0,0-.75-1A5.21,5.21,0,0,1,3,14.17Z'%3e%3c/path%3e%3cpath%20d='M22.22,26.06c.09,0,8.78-.14,8.78-11.89a7.22,7.22,0,1,0-9.78,6.73v4.16A1,1,0,0,0,22.22,26.06ZM18.56,14.17a5.22,5.22,0,1,1,10.44,0c0,7.5-3.89,9.31-5.78,9.75V20.17a1,1,0,0,0-.75-1A5.21,5.21,0,0,1,18.56,14.17Z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+              alt=""
+              width="50px"
+              height="50px"
+            />
+
+            <div class="d-flex flex-column gap-1">
+              <span class="fw-bold">Алексей М.</span>
+              <span class="text-dark-gray fs-14">Владелец BMW X5</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-0">
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </div>
+            <p class="description text-dark-gray">
+              "Долго не мог найти причину отказа сигнализации. Мастер за час
+              нашёл проблему в проводке и всё исправил. Профессионал своего
+              дела!"
+            </p>
+          </li>
+          <li class="reviews__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="reviews__img"
+              src="data:image/svg+xml,%3csvg%20fill='%23ff6800'%20width='64px'%20height='64px'%20viewBox='0%200%2032%2032'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M6.67,26.06c.09,0,8.77-.14,8.77-11.89A7.22,7.22,0,1,0,5.67,20.9v4.16A1,1,0,0,0,6.67,26.06ZM3,14.17a5.22,5.22,0,1,1,10.44,0c0,7.5-3.88,9.31-5.77,9.75V20.17a1,1,0,0,0-.75-1A5.21,5.21,0,0,1,3,14.17Z'%3e%3c/path%3e%3cpath%20d='M22.22,26.06c.09,0,8.78-.14,8.78-11.89a7.22,7.22,0,1,0-9.78,6.73v4.16A1,1,0,0,0,22.22,26.06ZM18.56,14.17a5.22,5.22,0,1,1,10.44,0c0,7.5-3.89,9.31-5.78,9.75V20.17a1,1,0,0,0-.75-1A5.21,5.21,0,0,1,18.56,14.17Z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+              alt=""
+              width="50px"
+              height="50px"
+            />
+
+            <div class="d-flex flex-column gap-1">
+              <span class="fw-bold">Дмитрий К.</span>
+              <span class="text-dark-gray fs-14">Audi A6</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-0">
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </div>
+            <p class="description text-dark-gray">
+              "Установил сигнализацию с автозапуском. Работа выполнена
+              аккуратно, всё объяснил и показал. Цена адекватная, рекомендую!"
+            </p>
+          </li>
+          <li class="reviews__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="reviews__img"
+              src="data:image/svg+xml,%3csvg%20fill='%23ff6800'%20width='64px'%20height='64px'%20viewBox='0%200%2032%2032'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M6.67,26.06c.09,0,8.77-.14,8.77-11.89A7.22,7.22,0,1,0,5.67,20.9v4.16A1,1,0,0,0,6.67,26.06ZM3,14.17a5.22,5.22,0,1,1,10.44,0c0,7.5-3.88,9.31-5.77,9.75V20.17a1,1,0,0,0-.75-1A5.21,5.21,0,0,1,3,14.17Z'%3e%3c/path%3e%3cpath%20d='M22.22,26.06c.09,0,8.78-.14,8.78-11.89a7.22,7.22,0,1,0-9.78,6.73v4.16A1,1,0,0,0,22.22,26.06ZM18.56,14.17a5.22,5.22,0,1,1,10.44,0c0,7.5-3.89,9.31-5.78,9.75V20.17a1,1,0,0,0-.75-1A5.21,5.21,0,0,1,18.56,14.17Z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+              alt=""
+              width="50px"
+              height="50px"
+            />
+
+            <div class="d-flex flex-column gap-1">
+              <span class="fw-bold">Сергей П.</span>
+              <span class="text-dark-gray fs-14">Toyota Camry</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-0">
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M9.15316%205.40838C10.4198%203.13613%2011.0531%202%2012%202C12.9469%202%2013.5802%203.13612%2014.8468%205.40837L15.1745%205.99623C15.5345%206.64193%2015.7144%206.96479%2015.9951%207.17781C16.2757%207.39083%2016.6251%207.4699%2017.3241%207.62805L17.9605%207.77203C20.4201%208.32856%2021.65%208.60682%2021.9426%209.54773C22.2352%2010.4886%2021.3968%2011.4691%2019.7199%2013.4299L19.2861%2013.9372C18.8096%2014.4944%2018.5713%2014.773%2018.4641%2015.1177C18.357%2015.4624%2018.393%2015.8341%2018.465%2016.5776L18.5306%2017.2544C18.7841%2019.8706%2018.9109%2021.1787%2018.1449%2021.7602C17.3788%2022.3417%2016.2273%2021.8115%2013.9243%2020.7512L13.3285%2020.4768C12.6741%2020.1755%2012.3469%2020.0248%2012%2020.0248C11.6531%2020.0248%2011.3259%2020.1755%2010.6715%2020.4768L10.0757%2020.7512C7.77268%2021.8115%206.62118%2022.3417%205.85515%2021.7602C5.08912%2021.1787%205.21588%2019.8706%205.4694%2017.2544L5.53498%2016.5776C5.60703%2015.8341%205.64305%2015.4624%205.53586%2015.1177C5.42868%2014.773%205.19043%2014.4944%204.71392%2013.9372L4.2801%2013.4299C2.60325%2011.4691%201.76482%2010.4886%202.05742%209.54773C2.35002%208.60682%203.57986%208.32856%206.03954%207.77203L6.67589%207.62805C7.37485%207.4699%207.72433%207.39083%208.00494%207.17781C8.28555%206.96479%208.46553%206.64194%208.82547%205.99623L9.15316%205.40838Z'%20fill='%23ff6800'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </div>
+            <p class="description text-dark-gray">
+              "Горела лампочка check engine. Провели диагностику, нашли
+              неисправный датчик кислорода. Быстро, качественно, без лишних
+              накруток."
+            </p>
+          </li>
+        </ul>
+
+        <div
+          class="reviews__help mt-5 d-flex flex-column align-items-center gap-4 rounded-3"
+        >
+          <h3 class="fw-bold text-white fs-4">Нужна помощь автоэлектрика?</h3>
+          <p class="section__description text-white fs-6">
+            Позвоните или оставьте заявку — проконсультирую и запишу на удобное
+            время.
+          </p>
+          <button type="button" class="btn reviews-btn">
+            Записаться на диагностику
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contact-us" class="contacts__section">
+      <div class="container">
+        <div
+          class="mb-5 d-flex flex-column align-items-center"
+          style="gap: 15px"
+        >
+          <span class="section__preview">Контакты</span>
+          <h2 class="section__title text-center">Связаться со мной</h2>
+          <p class="section__description text-center text-dark-gray">
+            Позвоните, напишите или оставьте заявку — отвечу на все вопросы.
+          </p>
+        </div>
+
+        <div class="contacts__info-wrapper">
+          <div class="d-flex flex-column gap-5">
+            <div class="p-3 border rounded-2 shadow-dark">
+              <h3 class="mb-2">Контактная информация</h3>
+              <div class="contacts__info d-flex flex-column gap-3">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="contacts__img"
+                    src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2016%2016'%20xmlns='http://www.w3.org/2000/svg'%20fill='%23ffffff'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M12.166%208.94c-.524%201.062-1.234%202.12-1.96%203.07A31.493%2031.493%200%200%201%208%2014.58a31.481%2031.481%200%200%201-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304%207.867%203%206.862%203%206a5%205%200%200%201%2010%200c0%20.862-.305%201.867-.834%202.94zM8%2016s6-5.686%206-10A6%206%200%200%200%202%206c0%204.314%206%2010%206%2010z'%3e%3c/path%3e%3cpath%20d='M8%208a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm0%201a3%203%200%201%200%200-6%203%203%200%200%200%200%206z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                    width="45px"
+                    height="45px"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="fw-bold">Адрес</span
+                    ><span class="text-dark-gray">г. Тула</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="contacts__img"
+                    src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2016%2016'%20xmlns='http://www.w3.org/2000/svg'%20fill='%23ffffff'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M12.166%208.94c-.524%201.062-1.234%202.12-1.96%203.07A31.493%2031.493%200%200%201%208%2014.58a31.481%2031.481%200%200%201-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304%207.867%203%206.862%203%206a5%205%200%200%201%2010%200c0%20.862-.305%201.867-.834%202.94zM8%2016s6-5.686%206-10A6%206%200%200%200%202%206c0%204.314%206%2010%206%2010z'%3e%3c/path%3e%3cpath%20d='M8%208a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm0%201a3%203%200%201%200%200-6%203%203%200%200%200%200%206z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                    width="45px"
+                    height="45px"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="fw-bold">Телефон</span
+                    ><span class="text-dark-gray">+7 (999) 999-99-99</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="contacts__img"
+                    src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2016%2016'%20xmlns='http://www.w3.org/2000/svg'%20fill='%23ffffff'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M12.166%208.94c-.524%201.062-1.234%202.12-1.96%203.07A31.493%2031.493%200%200%201%208%2014.58a31.481%2031.481%200%200%201-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304%207.867%203%206.862%203%206a5%205%200%200%201%2010%200c0%20.862-.305%201.867-.834%202.94zM8%2016s6-5.686%206-10A6%206%200%200%200%202%206c0%204.314%206%2010%206%2010z'%3e%3c/path%3e%3cpath%20d='M8%208a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm0%201a3%203%200%201%200%200-6%203%203%200%200%200%200%206z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                    width="45px"
+                    height="45px"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="fw-bold">Email</span
+                    ><span class="text-dark-gray"
+                      >autoelectric@example.com</span
+                    >
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="contacts__img"
+                    src="data:image/svg+xml,%3csvg%20width='64px'%20height='64px'%20viewBox='0%200%2024.00%2024.00'%20fill='%23ffffff'%20xmlns='http://www.w3.org/2000/svg'%20stroke='%23ffffff'%20stroke-width='0.00024000000000000003'%3e%3cg%20stroke-width='0'%3e%3c/g%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%3e%3cpath%20d='M23%2012C23%2018.0751%2018.0751%2023%2012%2023C5.92487%2023%201%2018.0751%201%2012C1%205.92487%205.92487%201%2012%201C18.0751%201%2023%205.92487%2023%2012ZM3.00683%2012C3.00683%2016.9668%207.03321%2020.9932%2012%2020.9932C16.9668%2020.9932%2020.9932%2016.9668%2020.9932%2012C20.9932%207.03321%2016.9668%203.00683%2012%203.00683C7.03321%203.00683%203.00683%207.03321%203.00683%2012Z'%20fill='%23ffffff'%3e%3c/path%3e%3cpath%20d='M12%205C11.4477%205%2011%205.44771%2011%206V12.4667C11%2012.4667%2011%2012.7274%2011.1267%2012.9235C11.2115%2013.0898%2011.3437%2013.2343%2011.5174%2013.3346L16.1372%2016.0019C16.6155%2016.278%2017.2271%2016.1141%2017.5032%2015.6358C17.7793%2015.1575%2017.6155%2014.5459%2017.1372%2014.2698L13%2011.8812V6C13%205.44772%2012.5523%205%2012%205Z'%20fill='%23ffffff'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+                    width="45px"
+                    height="45px"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="fw-bold">Режим работы</span
+                    ><span class="text-dark-gray">Пн - Вс: 9:00 - 20:00 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-4 d-flex flex-column align-items-start gap-3 bg-dark rounded-2"
+            >
+              <h3 class="text-white fw-bold fs-4">Выезд на место</h3>
+              <p class="text-gray">
+                Могу приехать к вам для диагностики или несложного ремонта.
+                Звоните в любое время — решим вашу проблему!
+              </p>
+              <button type="button" class="btn orange-btn">
+                Вызвать мастера
+              </button>
+            </div>
+          </div>
+
+          <form class="p-3 d-flex flex-column gap-3 border rounded-3">
+            <h3 class="m-0">Оставить заявку</h3>
+            <div class="d-flex flex-column gap-2">
+              <label for="name" class="fw-bold text-dark-gray">ФИО</label>
+              <input
+                id="name"
+                type="text"
+                class="px-2 py-1 input border rounded-1"
+                placeholder="Иванов Иван Иванович"
+              />
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <label for="tel" class="fw-bold text-dark-gray">Телефон</label>
+              <input
+                id="tel"
+                type="text"
+                class="px-2 py-1 input border rounded-1"
+                placeholder="+7 (999) 999 99 99"
+              />
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <label for="email" class="fw-bold text-dark-gray">Почта</label>
+              <input
+                id="email"
+                type="text"
+                class="px-2 py-1 input border rounded-1"
+                placeholder="Ivanov@mail.ru"
+              />
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <label for="car" class="fw-bold text-dark-gray"
+                >Марка и модель автомобиля</label
+              >
+              <input
+                id="car"
+                type="text"
+                class="px-2 py-1 input border rounded-1"
+                placeholder="Skoda Rapid 2018"
+              />
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <label for="extra" class="fw-bold text-dark-gray"
+                >Опишите проблему</label
+              >
+              <textarea
+                name="extra"
+                id="extra"
+                class="textarea px-2 py-1 input border rounded-1"
+                placeholder=""
+              ></textarea>
+            </div>
+
+            <button class="btn orange-btn">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-dark">
+      <div class="container">
+        <div class="footer__info mb-5">
+          <div class="d-flex flex-column gap-3">
+            <a
+              class="d-flex align-items-center gap-2 text-decoration-none"
+              href="#"
+            >
+              <img
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2015%2015'%20fill='%23ff6800'%3e%3cpath%20d='M12.6,8.7,11.5,6.5a1.05,1.05,0,0,0-.9-.5H4.4a1.05,1.05,0,0,0-.9.5L2.4,8.7,1.16,9.852a.5.5,0,0,0-.16.367V14.5a.5.5,0,0,0,.5.5h2c.2,0,.5-.2.5-.4V14h7v.5c0,.2.2.5.4.5h2.1a.5.5,0,0,0,.5-.5V10.219a.5.5,0,0,0-.16-.367ZM4.5,7h6l1,2h-8ZM5,11.6c0,.2-.3.4-.5.4H2.4c-.2,0-.4-.3-.4-.5V10.4c.1-.3.3-.5.6-.4l2,.4c.2,0,.4.3.4.5Zm8-.1c0,.2-.2.5-.4.5H10.5c-.2,0-.5-.2-.5-.4v-.7c0-.2.2-.5.4-.5l2-.4c.3-.1.5.1.6.4ZM14,2V3a1.009,1.009,0,0,1-1.017,1H5.348A2.549,2.549,0,0,1,1,3.5H3.5v-2H1A2.549,2.549,0,0,1,5.348,1h7.635A1.009,1.009,0,0,1,14,2Z'/%3e%3c/svg%3e"
+                width="40"
+                height="40"
+                alt="Логотип"
+              />
+              <div class="d-flex flex-column gap-1">
+                <span class="text-white fw-bold fs-5">DOCCAR71</span>
+                <span class="text-gray" style="font-size: 12px"
+                  >Автоэлектрик</span
+                >
+              </div>
+            </a>
+            <p class="text-gray description">
+              Профессиональный ремонт и диагностика электрооборудования
+              автомобилей. Опыт работы более 10 лет.
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 text-gray">
+            <span class="mb-1 text-white fw-bold fs-5">Навигация</span>
+            <span>Услуги</span>
+            <span>О мастере</span>
+            <span>Отзывы</span>
+            <span>Контакты</span>
+          </div>
+
+          <div class="d-flex flex-column gap-3 text-gray">
+            <span class="mb-1 text-white fw-bold fs-5">Услуги</span>
+            <span>Диагностика</span>
+            <span>Сигнализации</span>
+            <span>Автозвук</span>
+            <span>Ремонт проводки</span>
+          </div>
+
+          <div class="d-flex flex-column gap-3 text-gray">
+            <span class="mb-1 text-white fw-bold fs-5">Контакты</span>
+            <span>г. Тула</span>
+            <span>+7 (999) 123-45-67</span>
+            <span>autoelectric@example.com</span>
+          </div>
+        </div>
+        <hr />
+        <div class="footer__extra mt-3 text-center">
+          <span class="text-gray">© 2026 DOCCAR71. Все права защищены.</span>
+          <div class="d-flex align-items-center gap-3">
+            <a href="/" class="text-decoration-none text-gray"
+              >Политика конфиденциальности</a
+            >
+            <a href="/" class="text-decoration-none text-gray"
+              >Условия использования</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script>
+      const mobileMenu = document.querySelector(".mobile-overlay__body");
+      const burger = document.querySelector(".burger__wrapper");
+
+      burger.addEventListener("click", () => {
+        const isActive = mobileMenu.classList.toggle("active");
+        burger.classList.toggle("active");
+        document.body.style.overflow = isActive ? "hidden" : "";
+      });
+
+      document.querySelectorAll(".mob-nav").forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 50,
+              behavior: "smooth",
+            });
+          }
+
+          mobileMenu.classList.remove("active");
+          burger.classList.remove("active");
+          document.body.style.overflow = "";
+        });
+      });
+    </script> -->
+  </body>
+</html>
