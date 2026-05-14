@@ -1,0 +1,13 @@
+// $font-family-base: "Roboto", sans-serif;
+
+$orange: #ff6800;
+$dark-orange: #f64c00;
+
+$container-width: 1300px;
+$container-padding-x: 20px;
+
+$section-padding-y: 70px;
+
+@media (max-width: 1000px) {
+  $section-padding-y: 10px;
+}

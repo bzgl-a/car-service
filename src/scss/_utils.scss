@@ -1,0 +1,88 @@
+@use "./variables" as *;
+
+.container {
+  max-width: $container-width + $container-padding-x * 2;
+  width: 100%;
+  padding-inline: $container-padding-x;
+  margin: 0 auto;
+
+  @media (max-width: 1350px) {
+    padding-inline: 30px;
+  }
+
+  @media (max-width: 767px) {
+    padding-inline: 40px;
+  }
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 8px 15px;
+}
+
+.orange-btn {
+  color: #fff;
+  background-color: $orange;
+  border: 1px transparent solid;
+  transition:
+    color 0.4s ease,
+    background-color 0.4s ease,
+    border-color 0.4s ease;
+}
+
+.orange-btn:hover {
+  color: $orange;
+  background-color: #fff;
+  border: 1px $orange solid;
+}
+
+.section__preview {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 20px;
+  color: #f38a00;
+  background-color: #ffedd4;
+}
+
+.section__title {
+  font-size: clamp(30px, 9vw, 35px);
+}
+
+.section__description {
+  font-size: clamp(16px, 9vw, 18px);
+  line-height: 1.4;
+}
+
+.input {
+  outline: none;
+}
+
+.input:focus {
+  border-color: $orange;
+}
+
+.textarea {
+  min-height: 100px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

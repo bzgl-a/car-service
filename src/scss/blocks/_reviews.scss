@@ -1,0 +1,52 @@
+@use "../variables" as *;
+
+.reviews__section {
+  padding-block: $section-padding-y;
+  background-color: #fff;
+}
+
+.reviews__help {
+  padding: 50px;
+  background-image: linear-gradient(to right, $orange, $dark-orange);
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.5);
+
+  @media (max-width: 500px) {
+    padding: 40px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 30px;
+  }
+}
+
+.reviews-btn {
+  background-color: #fff;
+  color: $orange;
+  transition: transform 0.3s ease;
+}
+
+.reviews-btn:hover {
+  transform: scale(1.05);
+}
+
+.reviews__list {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+  }
+}
+
+.reviews__card {
+  position: relative;
+  padding: 30px;
+  background-color: #f8fafc;
+}
+
+.reviews__img {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  opacity: 0.4;
+}

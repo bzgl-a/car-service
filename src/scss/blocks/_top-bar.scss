@@ -1,0 +1,39 @@
+@use "../variables" as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 1000;
+}
+
+.header__title {
+  font-size: clamp(30px, 9vw, 60px);
+}
+
+.navbar__item a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar__item a:hover {
+  color: $orange;
+}
+
+.header-btn {
+  padding: 8px 20px;
+
+  @media (max-width: 750px) {
+    display: none;
+  }
+}
+
+.navbar {
+  @media (max-width: 750px) {
+    display: none;
+  }
+}

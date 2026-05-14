@@ -1,0 +1,38 @@
+@use "../variables" as *;
+
+.contacts__section {
+  padding-block: $section-padding-y;
+  background-color: #f8fafc;
+}
+
+.contacts__info-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts__info {
+  display: flex;
+  align-items: start;
+  overflow-x: auto;
+
+  @media (max-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.contacts__img {
+  padding: 10px;
+  background-color: $orange;
+  border-radius: 15px;
+}

@@ -1,0 +1,47 @@
+@use "../variables" as *;
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  a {
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: $orange;
+  }
+}
+
+.footer__info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer__extra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 550px) {
+    div {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}

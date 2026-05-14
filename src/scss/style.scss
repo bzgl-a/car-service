@@ -1,0 +1,15 @@
+@use "normalize";
+// @use "variables";
+@use "utils";
+@use "globals";
+@use "bootstrap";
+
+@use "./blocks/burger";
+@use "./blocks/mobile_overlay";
+@use "./blocks/top-bar";
+@use "./blocks/main";
+@use "./blocks/about_us";
+@use "./blocks/services";
+@use "./blocks/reviews";
+@use "./blocks/contacts";
+@use "./blocks/footer";

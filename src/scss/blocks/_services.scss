@@ -1,0 +1,44 @@
+@use "../variables" as *;
+
+.services__section {
+  padding-block: $section-padding-y;
+  background-color: #fff;
+}
+
+.services__img {
+  padding: 10px;
+  background-color: $orange;
+  border-radius: 15px;
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+
+  @media (max-width: 1350px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
+
+.services__card {
+  padding: 30px 40px;
+  background-color: #f8fafc;
+  border-radius: 10px;
+  border: solid 1px #dcdcdc;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.services__card:hover {
+  border: solid 1px rgba(249, 115, 22, 0.7);
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.2);
+}

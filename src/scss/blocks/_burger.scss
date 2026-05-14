@@ -1,0 +1,61 @@
+.burger__wrapper {
+  display: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media (max-width: 750px) {
+    display: block;
+  }
+}
+
+.burger__wrapper.active {
+  border: 2px #fff solid;
+}
+
+.burger__button {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+.line1 {
+  top: 0;
+}
+
+.line2 {
+  top: 11px;
+}
+
+.line3 {
+  bottom: 0;
+}
+
+.burger__wrapper.active .line1 {
+  background-color: #fff;
+  transform: rotate(45deg);
+  top: 11px;
+}
+
+.burger__wrapper.active .line2 {
+  opacity: 0;
+}
+
+.burger__wrapper.active .line3 {
+  background-color: #fff;
+  transform: rotate(-45deg);
+  bottom: 11px;
+}

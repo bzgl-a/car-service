@@ -1,0 +1,34 @@
+@use "../variables" as *;
+
+.mobile-overlay__body {
+  display: none;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  background-color: #0f172b;
+  color: #fff;
+  text-align: center;
+  z-index: 900;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.mobile-overlay__body.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.mobile-overlay__link {
+  color: #fff;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.mobile-overlay__link:hover {
+  color: $orange;
+}

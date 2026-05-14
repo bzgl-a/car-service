@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>car-service</title>
+  </head>
+  <body>
+    <!-- ШАПКА -->
+    <header class="header d-flex align-items-center bg-dark">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between gap-2">
+          <a
+            class="d-flex align-items-center gap-2 text-decoration-none"
+            href="#"
+          >
+            <img
+              src="./src/assets/logo.svg"
+              width="40"
+              height="40"
+              alt="Логотип"
+            />
+            <div class="d-flex flex-column gap-1">
+              <span class="text-white fw-bold fs-5">DOCCAR71</span>
+              <span class="text-gray" style="font-size: 12px"
+                >Автоэлектрик</span
+              >
+            </div>
+          </a>
+          <nav class="navbar">
+            <ul class="d-flex align-items-center gap-3">
+              <li class="navbar__item">
+                <a href="#services" class="mob-nav">Услуги</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#about-us" class="mob-nav"> О нас</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#reviews" class="mob-nav">Отзывы</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#contact-us" class="mob-nav">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="burger__wrapper">
+            <button class="burger__button" id="burger">
+              <div class="burger-line line1"></div>
+              <div class="burger-line line2"></div>
+              <div class="burger-line line3"></div>
+            </button>
+          </div>
+
+          <a
+            href="tel:+78005553535"
+            class="text-decoration-none btn orange-btn header-btn"
+          >
+            Позвонить нам
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- БУРГЕР МЕНЮ -->
+    <div class="mobile-overlay__body">
+      <ul
+        class="d-flex flex-column align-items-center justify-content-center gap-5"
+      >
+        <li class="mobile-overlay__item">
+          <a href="#services" class="mobile-overlay__link mob-nav">Услуги</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#about-us" class="mobile-overlay__link mob-nav">О нас</a>
+        </li>
+
+        <li class="mobile-overlay__item">
+          <a href="#reviews" class="mobile-overlay__link mob-nav">Отзывы</a>
+        </li>
+
+        <li class="mobile-overlay__item">
+          <a href="#contact-us" class="mobile-overlay__link mob-nav"
+            >Контакты</a
+          >
+        </li>
+
+        <li class="mobile-overlay__item">
+          <a
+            href="tel:+78005553535"
+            class="text-decoration-none btn btn-sm orange-btn"
+          >
+            Позвонить нам
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ГЛАВНАЯ -->
+    <main class="main d-flex align-items-center justify-content-center">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between gap-3">
+          <div class="main__info d-flex flex-column gap-5">
+            <h1 class="header__title fw-bold">
+              <span class="text-white">Профессиональный</span>
+              <span class="text-orange">автоэлектрик</span>
+            </h1>
+            <p class="m-0 text-gray section__description">
+              Диагностика и ремонт электрооборудования автомобилей любой
+              сложности. Современное оборудование, качественные запчасти,
+              индивидуальный подход.
+            </p>
+            <div
+              class="d-flex align-items-center justify-content-between gap-3"
+            >
+              <button class="btn orange-btn">Записаться на диагностику</button>
+            </div>
+            <div class="main__extra d-flex align-items-center gap-4">
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/assets/check.svg" alt="" class="text-orange" />
+                <span class="text-gray">Выезд на место</span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/assets/check.svg" alt="" class="text-orange" />
+                <span class="text-gray">Опыт 10+ лет</span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/assets/check.svg" alt="" class="text-orange" />
+                <span class="text-gray">Гарантия на работу</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__grid">
+            <div class="main_card d-flex flex-column gap-1">
+              <span class="text-orange fs-2 fw-bold">1500+</span
+              ><span class="text-gray text-nowrap">Авто обслужено</span>
+            </div>
+            <div class="main_card d-flex flex-column gap-1">
+              <span class="text-orange fs-2 fw-bold">10+</span
+              ><span class="text-gray text-nowrap">Лет опыта</span>
+            </div>
+            <div class="main_card d-flex flex-column gap-1">
+              <span class="text-orange fs-2 fw-bold">24/7</span
+              ><span class="text-gray text-nowrap">На связи</span>
+            </div>
+            <div class="main_card d-flex flex-column gap-1">
+              <span class="text-orange fs-2 fw-bold">100%</span
+              ><span class="text-gray text-nowrap">Качество</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- УСЛУГИ -->
+    <section id="services" class="services__section">
+      <div class="container">
+        <div
+          class="mb-5 d-flex flex-column align-items-center"
+          style="gap: 15px"
+        >
+          <span class="section__preview">Услуги</span>
+          <h2 class="section__title text-center">
+            Полный спектр услуг автоэлектрика
+          </h2>
+          <p class="section__description text-center text-dark-gray">
+            От простой диагностики до сложного ремонта электрооборудования — всё
+            выполняется качественно и в срок.
+          </p>
+        </div>
+
+        <ul class="services__list">
+          <li class="services__card d-flex flex-column gap-2">
+            <img
+              class="services__img"
+              src="./src/assets/services/gear.svg"
+              alt=""
+              width="50px"
+              height="50px"
+            /><span class="fw-bold fs-5">Компьютерная диагностика</span>
+            <p class="description text-dark-gray">
+              Полная диагностика электронных систем автомобиля с использованием
+              профессионального оборудования.
+            </p>
+          </li>
+          <li class="services__card d-flex flex-column gap-2">
+            <img
+              class="services__img"
+              src="./src/assets/services/battery.svg"
+              alt=""
+              width="50px"
+              height="50px"
+            /><span class="fw-bold fs-5">Ремонт электрики</span>
+            <p class="description text-dark-gray">
+              Устранение неисправностей электрооборудования: генератор, стартер,
+              аккумулятор, проводка.
+            </p>
+          </li>
+          <li class="services__card d-flex flex-column gap-2">
+            <img
+              class="services__img"
+              src="./src/assets/services/shield.svg"
+              alt=""
+              width="50px"
+              height="50px"
+            /><span class="fw-bold fs-5">Установка сигнализаций</span>
+            <p class="description text-dark-gray">
+              Профессиональная установка и настройка современных охранных систем
+              с автозапуском.
+            </p>
+          </li>
+          <li class="services__card d-flex flex-column gap-2">
+            <img
+              class="services__img"
+              src="./src/assets/services/sound.svg"
+              alt=""
+              width="50px"
+              height="50px"
+            /><span class="fw-bold fs-5">Автозвук и мультимедиа</span>
+            <p class="description text-dark-gray">
+              Установка и подключение магнитол, динамиков, усилителей, камер
+              заднего вида.
+            </p>
+          </li>
+          <li class="services__card d-flex flex-column gap-2">
+            <img
+              class="services__img"
+              src="./src/assets/services/lightning.svg"
+              alt=""
+              width="50px"
+              height="50px"
+            /><span class="fw-bold fs-5">Освещение</span>
+            <p class="description text-dark-gray">
+              Ремонт и модернизация световых приборов, установка ксенона,
+              LED-оптики.
+            </p>
+          </li>
+          <li class="services__card d-flex flex-column gap-2">
+            <img
+              class="services__img"
+              src="./src/assets/services/wires.svg"
+              alt=""
+              width="50px"
+              height="50px"
+            /><span class="fw-bold fs-5">Ремонт проводки</span>
+            <p class="description text-dark-gray">
+              Поиск и устранение обрывов, коротких замыканий, восстановление
+              проводки после ДТП.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- О НАС -->
+    <section id="about-us" class="about-us__section">
+      <div class="container">
+        <div
+          class="mb-5 d-flex flex-column align-items-center"
+          style="gap: 15px"
+        >
+          <span class="section__preview">О нас</span>
+          <h2 class="section__title text-center">Опыт и профессионализм</h2>
+          <p class="section__description text-center text-dark-gray">
+            Работаю автоэлектриком более 10 лет. Использую современное
+            оборудование, качественные запчасти и индивидуальный подход к
+            каждому клиенту.
+          </p>
+        </div>
+
+        <ul class="about-us__list">
+          <li class="about-us__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="about-us__img"
+              src="./src/assets/medal.svg"
+              width="50px"
+              height="50px"
+              alt=""
+            />
+            <span class="fw-bold fs-3">10+</span>
+            <span class="text-nowrap">Лет опыта</span>
+            <span class="text-nowrap text-dark-gray fs-14"
+              >В автоэлектрике</span
+            >
+          </li>
+          <li class="about-us__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="about-us__img"
+              src="./src/assets/people.svg"
+              width="50px"
+              height="50px"
+              alt=""
+            />
+            <span class="fw-bold fs-3">1500+</span>
+            <span>Автомобилей</span>
+            <span class="text-nowrap text-dark-gray fs-14"
+              >Успешно обслужено</span
+            >
+          </li>
+          <li class="about-us__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="about-us__img"
+              src="./src/assets/time.svg"
+              width="50px"
+              height="50px"
+              alt=""
+            />
+            <span class="fw-bold fs-3">24/7</span>
+            <span class="text-nowrap">На связи</span>
+            <span class="text-nowrap text-dark-gray fs-14">Выезд на место</span>
+          </li>
+          <li class="about-us__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="about-us__img"
+              src="./src/assets/shield.svg"
+              width="50px"
+              height="50px"
+              alt=""
+            />
+            <span class="fw-bold fs-3">100%</span>
+            <span>Гарантия</span>
+            <span class="text-nowrap text-dark-gray fs-14"
+              >На все виды работ</span
+            >
+          </li>
+        </ul>
+
+        <div class="about-us__extra p-5 mt-5 bg-dark rounded-3">
+          <div class="d-flex flex-column gap-3">
+            <span class="mb-1 text-white fs-4 fw-bold"
+              >Почему выбирают меня?</span
+            >
+
+            <div class="d-flex align-items-center gap-2">
+              <img
+                class="about-us__check-img"
+                src="./src/assets/check-white.svg"
+                width="22px"
+                height="22px"
+                alt=""
+              />
+              <span class="text-gray"
+                >Современное диагностическое оборудование</span
+              >
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <img
+                class="about-us__check-img"
+                src="./src/assets/check-white.svg"
+                width="22px"
+                height="22px"
+                alt=""
+              />
+              <span class="text-gray"> Честность и прозрачность в работе</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <img
+                class="about-us__check-img"
+                src="./src/assets/check-white.svg"
+                width="22px"
+                height="22px"
+                alt=""
+              />
+              <span class="text-gray">Работа с любыми марками и моделями</span>
+            </div>
+          </div>
+
+          <button type="button" class="btn orange-btn fw-bold">
+            Связаться со мной
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section id="reviews" class="reviews__section">
+      <div class="container">
+        <div
+          class="mb-5 d-flex flex-column align-items-center"
+          style="gap: 15px"
+        >
+          <span class="section__preview">Отзывы</span>
+          <h2 class="section__title text-center">Что говорят клиенты</h2>
+          <p class="section__description text-center text-dark-gray">
+            Реальные отзывы людей, которые доверили мне свои автомобили.
+          </p>
+        </div>
+
+        <ul class="reviews__list gap-5">
+          <li class="reviews__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="reviews__img"
+              src="./src/assets/qoute.svg"
+              alt=""
+              width="50px"
+              height="50px"
+            />
+
+            <div class="d-flex flex-column gap-1">
+              <span class="fw-bold">Алексей М.</span>
+              <span class="text-dark-gray fs-14">Владелец BMW X5</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-0">
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </div>
+            <p class="description text-dark-gray">
+              "Долго не мог найти причину отказа сигнализации. Мастер за час
+              нашёл проблему в проводке и всё исправил. Профессионал своего
+              дела!"
+            </p>
+          </li>
+          <li class="reviews__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="reviews__img"
+              src="./src/assets/qoute.svg"
+              alt=""
+              width="50px"
+              height="50px"
+            />
+
+            <div class="d-flex flex-column gap-1">
+              <span class="fw-bold">Дмитрий К.</span>
+              <span class="text-dark-gray fs-14">Audi A6</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-0">
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </div>
+            <p class="description text-dark-gray">
+              "Установил сигнализацию с автозапуском. Работа выполнена
+              аккуратно, всё объяснил и показал. Цена адекватная, рекомендую!"
+            </p>
+          </li>
+          <li class="reviews__card d-flex flex-column gap-2 border rounded-2">
+            <img
+              class="reviews__img"
+              src="./src/assets/qoute.svg"
+              alt=""
+              width="50px"
+              height="50px"
+            />
+
+            <div class="d-flex flex-column gap-1">
+              <span class="fw-bold">Сергей П.</span>
+              <span class="text-dark-gray fs-14">Toyota Camry</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-0">
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                src="src/assets/star.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </div>
+            <p class="description text-dark-gray">
+              "Горела лампочка check engine. Провели диагностику, нашли
+              неисправный датчик кислорода. Быстро, качественно, без лишних
+              накруток."
+            </p>
+          </li>
+        </ul>
+
+        <div
+          class="reviews__help mt-5 d-flex flex-column align-items-center gap-4 rounded-3"
+        >
+          <h3 class="fw-bold text-white fs-4">Нужна помощь автоэлектрика?</h3>
+          <p class="section__description text-white fs-6">
+            Позвоните или оставьте заявку — проконсультирую и запишу на удобное
+            время.
+          </p>
+          <button type="button" class="btn reviews-btn">
+            Записаться на диагностику
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contact-us" class="contacts__section">
+      <div class="container">
+        <div
+          class="mb-5 d-flex flex-column align-items-center"
+          style="gap: 15px"
+        >
+          <span class="section__preview">Контакты</span>
+          <h2 class="section__title text-center">Связаться со мной</h2>
+          <p class="section__description text-center text-dark-gray">
+            Позвоните, напишите или оставьте заявку — отвечу на все вопросы.
+          </p>
+        </div>
+
+        <div class="contacts__info-wrapper">
+          <div class="d-flex flex-column gap-5">
+            <div class="p-3 border rounded-2 shadow-dark">
+              <h3 class="mb-2">Контактная информация</h3>
+              <div class="contacts__info d-flex flex-column gap-3">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="contacts__img"
+                    src="./src/assets/contacts/geo.svg"
+                    width="45px"
+                    height="45px"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="fw-bold">Адрес</span
+                    ><span class="text-dark-gray">г. Тула</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="contacts__img"
+                    src="./src/assets/contacts/geo.svg"
+                    width="45px"
+                    height="45px"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="fw-bold">Телефон</span
+                    ><span class="text-dark-gray">+7 (999) 999-99-99</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="contacts__img"
+                    src="./src/assets/contacts/geo.svg"
+                    width="45px"
+                    height="45px"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="fw-bold">Email</span
+                    ><span class="text-dark-gray"
+                      >autoelectric@example.com</span
+                    >
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="contacts__img"
+                    src="./src/assets/time.svg"
+                    width="45px"
+                    height="45px"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="fw-bold">Режим работы</span
+                    ><span class="text-dark-gray">Пн - Вс: 9:00 - 20:00 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-4 d-flex flex-column align-items-start gap-3 bg-dark rounded-2"
+            >
+              <h3 class="text-white fw-bold fs-4">Выезд на место</h3>
+              <p class="text-gray">
+                Могу приехать к вам для диагностики или несложного ремонта.
+                Звоните в любое время — решим вашу проблему!
+              </p>
+              <button type="button" class="btn orange-btn">
+                Вызвать мастера
+              </button>
+            </div>
+          </div>
+
+          <form class="p-3 d-flex flex-column gap-3 border rounded-3">
+            <h3 class="m-0">Оставить заявку</h3>
+            <div class="d-flex flex-column gap-2">
+              <label for="name" class="fw-bold text-dark-gray">ФИО</label>
+              <input
+                id="name"
+                type="text"
+                class="px-2 py-1 input border rounded-1"
+                placeholder="Иванов Иван Иванович"
+              />
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <label for="tel" class="fw-bold text-dark-gray">Телефон</label>
+              <input
+                id="tel"
+                type="text"
+                class="px-2 py-1 input border rounded-1"
+                placeholder="+7 (999) 999 99 99"
+              />
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <label for="email" class="fw-bold text-dark-gray">Почта</label>
+              <input
+                id="email"
+                type="text"
+                class="px-2 py-1 input border rounded-1"
+                placeholder="Ivanov@mail.ru"
+              />
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <label for="car" class="fw-bold text-dark-gray"
+                >Марка и модель автомобиля</label
+              >
+              <input
+                id="car"
+                type="text"
+                class="px-2 py-1 input border rounded-1"
+                placeholder="Skoda Rapid 2018"
+              />
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <label for="extra" class="fw-bold text-dark-gray"
+                >Опишите проблему</label
+              >
+              <textarea
+                name="extra"
+                id="extra"
+                class="textarea px-2 py-1 input border rounded-1"
+                placeholder=""
+              ></textarea>
+            </div>
+
+            <button class="btn orange-btn">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-dark">
+      <div class="container">
+        <div class="footer__info mb-5">
+          <div class="d-flex flex-column gap-3">
+            <a
+              class="d-flex align-items-center gap-2 text-decoration-none"
+              href="#"
+            >
+              <img
+                src="./src/assets/logo.svg"
+                width="40"
+                height="40"
+                alt="Логотип"
+              />
+              <div class="d-flex flex-column gap-1">
+                <span class="text-white fw-bold fs-5">DOCCAR71</span>
+                <span class="text-gray" style="font-size: 12px"
+                  >Автоэлектрик</span
+                >
+              </div>
+            </a>
+            <p class="text-gray description">
+              Профессиональный ремонт и диагностика электрооборудования
+              автомобилей. Опыт работы более 10 лет.
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 text-gray">
+            <span class="mb-1 text-white fw-bold fs-5">Навигация</span>
+            <span>Услуги</span>
+            <span>О мастере</span>
+            <span>Отзывы</span>
+            <span>Контакты</span>
+          </div>
+
+          <div class="d-flex flex-column gap-3 text-gray">
+            <span class="mb-1 text-white fw-bold fs-5">Услуги</span>
+            <span>Диагностика</span>
+            <span>Сигнализации</span>
+            <span>Автозвук</span>
+            <span>Ремонт проводки</span>
+          </div>
+
+          <div class="d-flex flex-column gap-3 text-gray">
+            <span class="mb-1 text-white fw-bold fs-5">Контакты</span>
+            <span>г. Тула</span>
+            <span>+7 (999) 123-45-67</span>
+            <span>autoelectric@example.com</span>
+          </div>
+        </div>
+        <hr />
+        <div class="footer__extra mt-3 text-center">
+          <span class="text-gray">© 2026 DOCCAR71. Все права защищены.</span>
+          <div class="d-flex align-items-center gap-3">
+            <a href="/" class="text-decoration-none text-gray"
+              >Политика конфиденциальности</a
+            >
+            <a href="/" class="text-decoration-none text-gray"
+              >Условия использования</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+
+    <!-- <script>
+      const mobileMenu = document.querySelector(".mobile-overlay__body");
+      const burger = document.querySelector(".burger__wrapper");
+
+      burger.addEventListener("click", () => {
+        const isActive = mobileMenu.classList.toggle("active");
+        burger.classList.toggle("active");
+        document.body.style.overflow = isActive ? "hidden" : "";
+      });
+
+      document.querySelectorAll(".mob-nav").forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 50,
+              behavior: "smooth",
+            });
+          }
+
+          mobileMenu.classList.remove("active");
+          burger.classList.remove("active");
+          document.body.style.overflow = "";
+        });
+      });
+    </script> -->
+  </body>
+</html>
